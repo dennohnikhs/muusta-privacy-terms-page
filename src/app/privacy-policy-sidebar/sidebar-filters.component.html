@@ -1,0 +1,81 @@
+<div class="relative py-3 pl-8 bg-white rounded-md min-w-[15vw] min-h-[80vh]">
+  <ul class="flex flex-col text-[15px] text-gray-600">
+    <li
+      class="bg-blue-300 bg-opacity-10 text-blue-500 cursor-pointer py-2 rounded-sm flex justify-between items-center border-r-4 border-blue-500"
+    >
+      Getting Started
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="main-grid-item-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="text-black-300 mr-3"
+          (click)="showDropdownLinks = !showDropdownLinks"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        <!-- chevron-up svg -->
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="main-grid-item-icon mr-3 text-black"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        >
+          <polyline points="18 15 12 9 6 15" />
+        </svg> -->
+      </div>
+    </li>
+    <ul
+      class="px-6 py-2 flex flex-col text-[15px] text-gray-600 cursor-pointer"
+      *ngIf="showDropdownLinks"
+    >
+      <li class="text-blue-500 py-3 whitespace-wrap border-b border-gray-200">
+        Set up your account on Muuster
+      </li>
+      <li class="text-gray-500 py-3 whitespace-wrap border-b border-gray-200">
+        Getting up your shop up and running
+      </li>
+    </ul>
+
+    <li class="py-2 flex justify-between items-center">
+      <div>
+        <h1>Privacy & Data</h1>
+        <span> Protection Policies </span>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="main-grid-item-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="text-black-300 mr-3"
+          (click)="showDropdownLinks = !showDropdownLinks"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+    </li>
+
+    <li class="py-3">GDPR</li>
+    <li class="py-3">Licenses</li>
+  </ul>
+</div>
